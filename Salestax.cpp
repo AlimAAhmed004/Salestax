@@ -3,14 +3,13 @@
 
 #include <iostream>
 using namespace std;
-const double stateTax = .04;
-const double countyTax = .02;
 
 int main()
 {
+	// variables for my input
 	double stateTax;
 	double countyTax;
-	double itemCost = 95.00;
+	double itemCost;
 
 	cout << "Please enter the state tax (as a demical point): ";
 	cin >> stateTax;
@@ -22,6 +21,8 @@ int main()
 	//double cost = 0.0; // Removed to avoid redefinition error
 	double totaltax = itemCost * stateTax + itemCost * countyTax;
 	double totalCost = itemCost + totaltax;
+	
+	//output
 
 	cout << "The cost of the item is $" << itemCost << "\n";
 	cout << "The total tax including a state tax of " << stateTax << endl;
